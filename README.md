@@ -49,7 +49,6 @@ The project involves the following steps:
   * Confusion Matrix
   * ROC–AUC Score
 
----
 
 **3. Key Churn Indicators**
 
@@ -63,7 +62,7 @@ Based on analysis and feature importance scores, the major factors affecting cus
 
 These insights can help organizations understand customer behavior and plan retention strategies.
 
----
+
 
 **4. System Features**
 
@@ -73,7 +72,7 @@ These insights can help organizations understand customer behavior and plan rete
 * Works on any modern browser
 * Easy to deploy and extend
 
----
+
 
 **5. Technology Stack**
 
@@ -92,7 +91,6 @@ Web Application:
 * REST API for prediction requests
 * Backend service for loading the trained model
 
----
 
 **6. Project Structure**
 
@@ -106,24 +104,11 @@ telecom-churn-prediction/
 * requirements.txt    (Python dependencies)
 * README.txt          (project documentation)
 
----
+
 
 **7. How to Run Locally**
 
-1. Clone the repository:
-   git clone [https://github.com/yourusername/telecom-churn-prediction](https://github.com/yourusername/telecom-churn-prediction)
-   cd telecom-churn-prediction
-
-2. Install Python dependencies:
-   pip install -r requirements.txt
-
-3. Start the backend server:
-   python api/server.py
-
-4. Open the web interface:
-   Open the index.html file inside the app/ folder.
-
----
+This can be run currently on this link given here : https://crdkjlr4-5173.inc1.devtunnels.ms/
 
 **8. Deployment**
 
@@ -144,8 +129,6 @@ Frontend:
 
 The frontend connects to the backend prediction API for churn inference.
 
----
-
 **9. Future Improvements**
 
 * Add visual dashboards and charts
@@ -155,19 +138,3 @@ The frontend connects to the backend prediction API for churn inference.
 * Automate retraining with fresh data
 * Improve UI styling
 
----
-
-**10. License**
-
-This project is licensed under the MIT License.
-
----
-
-If you want, I can also generate:
-
-* The backend server script
-* The frontend UI (HTML/CSS/JS)
-* A zipped file with the complete structure
-* A dataset description section you can attach
-
-Just tell me!
