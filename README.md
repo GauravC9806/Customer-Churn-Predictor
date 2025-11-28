@@ -1,20 +1,14 @@
-Here is a **clean, plain-text version** of the README — no emojis, no formatting issues — just a proper text file you can **copy and paste directly** into your project.
-
----
-
 **Telecom Customer Churn Prediction System**
 
 The Telecom Customer Churn Prediction System is a machine learning-based web application designed to predict whether a customer is likely to discontinue telecom services. The project analyzes customer behavior, account details, service usage, and billing patterns to estimate churn probability.
 
 This project demonstrates how data science techniques and a simple web interface can be used together to solve real-world problems related to customer retention.
 
----
 
 **1. Objective**
 
 The main goal of this project is to identify customers who are at high risk of churning. By predicting churn early, telecom companies can implement retention strategies and reduce revenue loss. The system provides an interactive interface where users can input customer details and obtain real-time churn predictions.
 
----
 
 **2. Machine Learning Overview**
 
