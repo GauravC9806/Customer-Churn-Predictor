@@ -1,107 +1,29 @@
-# Customer-Churn-Predictor
-This project focuses on predicting whether a telecom customer is likely to discontinue services (churn). By analyzing customer behavior, usage patterns, billing details, and service attributes, the model identifies high-risk customers before they leave.
-📡 Telecom Customer Churn Prediction
+# Telecom Customer Churn Prediction System
+  
+This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
+ You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
+  
+This project is connected to the Convex deployment named [`brave-newt-954`](https://dashboard.convex.dev/d/brave-newt-954).
+  
+## Project structure
+  
+The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
+  
+The backend code is in the `convex` directory.
+  
+`npm run dev` will start the frontend and backend servers.
 
-Predicting whether a telecom customer will discontinue services using machine learning.
+## App authentication
 
-📘 Overview
+Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
 
-Customer churn is one of the biggest challenges for telecom companies. This project builds a machine learning model capable of identifying customers who are likely to leave based on behavior, service usage, billing patterns, and subscription details.
-The goal is to help businesses reduce churn, improve retention, and optimize customer experience.
+## Developing and deploying your app
 
-🎯 Objectives
+Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
+* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
+* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
+* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
 
-Predict whether a customer will churn (Yes/No).
+## HTTP API
 
-Understand the key factors influencing churn.
-
-Build interpretable ML models for business decision-making.
-
-Provide insights to support targeted retention strategies.
-
-🧠 Key Challenges
-
-Mixed data types: categorical + numerical features.
-
-Missing values & inconsistencies: duplicates, incomplete fields.
-
-Feature engineering: identifying strong churn indicators.
-
-Class imbalance: churn cases usually make up a small portion.
-
-⚙️ Project Workflow
-
-Data Cleaning
-
-Handle missing values
-
-Encode categorical variables
-
-Normalize numerical features
-
-Remove duplicates
-
-Exploratory Data Analysis (EDA)
-
-Usage patterns
-
-Correlation analysis
-
-Customer segmentation
-
-Model Development
-Algorithms used:
-
-Logistic Regression
-
-Random Forest
-
-XGBoost
-
-Support Vector Machines (optional)
-
-Model Evaluation
-Metrics:
-
-Accuracy
-
-Precision & Recall
-
-F1-Score
-
-Confusion Matrix
-
-ROC-AUC
-
-Feature Importance
-
-Identify major churn drivers
-
-Assist in actionable retention strategies
-
-🔍 Key Insights
-
-Major churn indicators typically include:
-
-High monthly charges
-
-Low tenure (new customers churn faster)
-
-Network reliability issues
-
-Frequent service complaints
-
-Month-to-month contracts
-
-Payment method (e.g., electronic check = higher churn)
-
-🚀 Real-Life Applications
-
-Customer Retention Analytics
-Identify high-risk customers and take early action.
-
-Churn Prediction Dashboards
-Visualize churn trends and business KPIs using Power BI / Tableau.
-
-Personalized Recommendation Engines
-Offer targeted plans, discounts, or upgrades to retain customers.
+User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
